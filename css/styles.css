@@ -28,6 +28,8 @@ body {
 
 }
 
+/*nav menu*/
+
 .wrapper {
     width: 90%;
     margin: 0 auto;
@@ -113,21 +115,29 @@ nav:has(.nav_links:target)::before {
     font-weight: 500;
 }
 
+/*main*/
+
 .main-title {
     color: var(--very-dark-blue);
     font-size: 3rem;
     line-height: 3rem;
     margin: .5rem;
     font-weight: 900;
+
 }
 
 
 .button {
     background-color: var(--soft-red);
-    text-align: left;
     display: flex;
     max-width: 25%;
     padding: 1rem 4.5rem;
+    text-transform: uppercase;
+    color: var(--off-white);
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    font-size: 1rem;
 
 }
 
@@ -146,20 +156,19 @@ nav:has(.nav_links:target)::before {
     background-color: var(--very-dark-blue);
 }
 
-.button {
-    margin: 1.5rem 1.5rem 3.5rem .5rem;
-    text-transform: uppercase;
-    color: var(--off-white);
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: .1rem;
-    font-size: 1rem;
-}
+/*news*/
 
 .news {
+    margin-top: 5rem;
     max-width: 100%;
+    padding: 2rem;
     background-color: var(--very-dark-blue);
 
+}
+
+.header,
+.subheader {
+    margin: 1rem;
 }
 
 .title {
@@ -191,7 +200,7 @@ hr {
     margin: 2rem;
 }
 
-/* */
+/*articles */
 
 
 .a-block {
@@ -243,10 +252,28 @@ h2 {
         min-width: 1400px;
         min-height: 850px;
         border-radius: .5rem;
+    }
+
+    .nav {
+        margin: 2rem 0;
+    }
+
+    .nav_links {
+        display: flex;
+        flex-direction: row;
 
     }
 
-    .nav::before {
+    .nav_link {
+        margin-left: auto;
+        direction: flex-end;
+        font-size: 1.2rem;
+        color: var(--dark-grayish-blue);
+        margin: .7rem;
+
+    }
+
+    */ .nav::before {
         content: unset;
         font-size: .5rem;
     }
@@ -266,7 +293,6 @@ h2 {
         width: unset;
         max-width: unset;
         gap: 1.5em;
-        grid-auto-rows: column;
         padding: 0;
         overflow-y: unset;
         pointer-events: unset;
@@ -285,14 +311,14 @@ h2 {
     }
 
     .main-title {
-        margin: 2rem 2rem 4rem 0;
+        margin: 3rem 2rem 2rem 0;
         line-height: 1.2;
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .button {
-        max-width: 5rem;
-        margin: 0 0 2rem 0;
+        max-width: 7rem;
+
     }
 
     .news {
@@ -301,6 +327,12 @@ h2 {
         margin: 0 .5rem;
         padding: 1rem 0;
 
+    }
+
+    .title,
+    .header,
+    .subheader {
+        margin: 2rem;
     }
 
     .prueba {
@@ -317,12 +349,13 @@ h2 {
     .min-det {
         display: flex;
         flex-direction: column;
-        margin: 2rem 2rem 6rem 0;
+        margin: 2rem;
+        padding: 1rem;
     }
 
     .desc {
-        margin: 0 2rem 2rem 0;
-        font-size: 1.5;
+
+        font-size: 1.2rem;
     }
 
     .articles {
